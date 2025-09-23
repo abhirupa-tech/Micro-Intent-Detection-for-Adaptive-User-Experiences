@@ -1,0 +1,11 @@
+{
+  "name": "Micro UI Intent Tracker Extension",
+  "description": "Micro UI Intent Tracker Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Launch Intent Tracker",
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  }
+}
