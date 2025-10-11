@@ -16,6 +16,8 @@
     }
   ],
   "background": {
-    "service_worker": "serviceWorker.js"
-  
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+  "permissions": ["scripting", "activeTab", "storage", "tabs", "webNavigation", "webRequest", "storage"]
 }

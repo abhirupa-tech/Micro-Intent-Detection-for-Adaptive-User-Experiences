@@ -24,7 +24,8 @@ function handleScroll() {
 }
 
 document.getElementById("startCapture").addEventListener("click", () => {
-    console.log("Start Capture button clicked");
+  console.log("Start Capture button clicked");
+  chrome.runtime.sendMessage({ type: "START_CAPTURE" });
   if (!isCapturing) {
     isCapturing = true;
     addEventListeners();
@@ -33,7 +34,8 @@ document.getElementById("startCapture").addEventListener("click", () => {
 });
 
 document.getElementById("endCapture").addEventListener("click", () => {
-    console.log("End Capture button clicked");
+  chrome.runtime.sendMessage({ type: "END_CAPTURE"});
+  console.log("End Capture button clicked");
   if (isCapturing) {
     isCapturing = false;
     removeEventListeners();
